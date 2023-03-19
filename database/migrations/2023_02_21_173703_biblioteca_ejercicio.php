@@ -18,6 +18,7 @@ return new class extends Migration
         Schema::create('books', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('isbn')->unique();
+            $table->mediumText('title');
             $table->mediumText('author');
             $table->date('publish_date');
             $table->longText('description');

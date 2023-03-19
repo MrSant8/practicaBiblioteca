@@ -23,6 +23,7 @@ class BookCategoryTableSeeder extends Seeder
             DB::table('books')->insert(
                 [
                     'isbn' => $faker->unique()->isbn13,
+                    'title' => $faker->sentence(),
                     'author' => $faker->name(),
                     'description' => $faker->paragraph,
                     'publish_date' => $faker->date(),
