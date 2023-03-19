@@ -24,9 +24,7 @@ class BookController extends Controller
 
     public function create()
     {
-        dd();
         return view('book.create');
-
 
     }
     
